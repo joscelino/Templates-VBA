@@ -1,3 +1,5 @@
+' Apos rodar o codigo, proteger o mesmo utilizando o caminho: Ferramentas -> Propriedades do VBProject -> Protecao
+
 Private Sub Worksheet_Activate()
 
 'Desativa atualização de telaas
