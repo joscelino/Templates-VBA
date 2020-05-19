@@ -1,0 +1,18 @@
+Private Sub Worksheet_Activate()
+
+'Desativa atualização de telaas
+Application.ScreenUpdating = False
+
+'Checa o usuário atual
+'Se o nome do usuário (em maiúsculas) é diferente de CONTABILIDADE então...
+If Environ("Username") <> "Contabilidade" Then
+
+    Sheets("Plan1").Select
+    MsgBox "Você não pode utilizar esta planilha!", vbOKOnly, "Atenção"
+
+End If
+
+'Ativa atualização da tela
+Application.ScreenUpdating = True
+
+End Sub
